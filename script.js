@@ -2,7 +2,7 @@ const container = document.createElement("div");
 container.setAttribute("class", "container");
 document.body.appendChild(container);
 
-fetch("http://api.nbp.pl/api/exchangerates/tables/a/last/1?format=json")
+fetch("https://api.nbp.pl/api/exchangerates/tables/a/last/1?format=json")
   .then(resp => {
     if (resp.ok) {
       return resp;
