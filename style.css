@@ -21,8 +21,9 @@ h2 {
     width: 21%;
     margin-top: 25px;
     /* border: 1px solid gray; */
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3);
     transition: 0.4s;
+    background-color: #B4B7BA;
 }
 
 h5 {
@@ -30,7 +31,7 @@ h5 {
 }
 
 .card:hover {
-    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 24px 0 rgba(0, 0, 0, 0.3);
 }
 
 p {
