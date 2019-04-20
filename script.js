@@ -3,6 +3,12 @@ container.setAttribute("class", "container");
 document.body.appendChild(container);
 
 fetch("http://api.nbp.pl/api/exchangerates/tables/a/last/1?format=json")
+  .then(resp => {
+    if (resp.ok) {
+      return resp;
+    }
+    throw Error(resp.status);
+  })
   .then(resp => resp.json())
   .then(resp => {
     console.log(resp);
