@@ -21,6 +21,19 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
+}
+
+@keyframes appear {
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
 }
 
 .card {
@@ -31,6 +44,9 @@ h1 {
     box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.5);
     transition: 0.8s;
     background-color: #B4B7BA;
+    animation: appear 2s ease;
+    position: relative;
+
 }
 
 h4 {
